@@ -21,3 +21,4 @@ export function Pagination({ numberOfPages }: PaginationProps) {
     </ul>
   );
 }
+0

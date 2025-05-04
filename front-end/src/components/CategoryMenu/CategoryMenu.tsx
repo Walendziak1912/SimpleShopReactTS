@@ -14,7 +14,7 @@ export function CategoryMenu() {
               <NavLink to={`/${params.gender}/${category.path}`}>
                 {category.categoryName}
               </NavLink>
-            </li>
+            </li> 
           );
         })}
       </ul>
