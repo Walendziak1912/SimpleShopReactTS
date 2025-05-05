@@ -13,6 +13,7 @@ import { mainPageLoader } from "./api/mainPageLoader";
 import { productListLoader } from "./api/productListLoader";
 import { favouritesLoader } from "./api/favouritesLoader";
 import { addProductToFavourites } from "./api/addProductToFavouriteAction";
+import { deleteFavouriteAction } from "./api/deleteFavouriteAction";
 
 //wszystkie parametry ":productId", ":gendrer", ":category" i ":subcategory" są potocznie nazywane parametrami dynamicznymi (ta część url jest dynamiczna, zmienia się w zależności od tego co wybierze użytkownik)
 //dostęp do tych parametrów można uzyskać w komponentach za pomocą hooka useParams() z react-router-dom
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/add-to-favourites/:productId",
     action: addProductToFavourites,
+  },
+  {
+    path: "/delete-favourite/:favouriteId",
+    action: deleteFavouriteAction,
   },
   {
     path: "",

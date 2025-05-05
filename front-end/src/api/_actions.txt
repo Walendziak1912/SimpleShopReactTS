@@ -1,0 +1,34 @@
+Wykorzystanie akcji w React Router dla operacji modyfikujących dane jest dobrą praktyką i właściwym podejściem architektonicznym z kilku istotnych powodów:
+
+Deklaratywne podejście do nawigacji i operacji na danych 
+    React Router (od wersji 6.4+) wprowadził koncepcję akcji, które są zintegrowane z systemem routingu. 
+    Dzięki temu możesz deklaratywnie określić, co ma się wydarzyć po przesłaniu formularza, bez imperatywnego pisania logiki obsługi zdarzenia.
+
+Obsługa stanu ładowania i błędów 
+    React Router automatycznie zarządza stanami ładowania, błędów i powodzenia akcji, co upraszcza kod komponentów UI.
+
+Automatyczne wycofywanie zmian optymistycznych 
+    W przypadku niepowodzenia akcji, React Router może automatycznie wycofać optymistyczne aktualizacje interfejsu.
+
+Spójność z resztą architektury 
+    Jeśli korzystasz z React Router do pobierania danych (poprzez loadery), używanie akcji do modyfikacji danych tworzy spójne i przewidywalne API dla całej aplikacji.
+
+Oddzielenie logiki biznesowej od UI
+    Akcje pozwalają na wydzielenie logiki biznesowej do osobnych plików, co ułatwia testowanie i utrzymanie kodu.
+
+Dostęp do kontekstu routingu
+    Akcje otrzymują parametry URL, dane formularza i inne informacje kontekstowe z routera, co eliminuje potrzebę ręcznego pobierania tych danych.
+
+Automatyczne przekierowania
+    Akcje mogą zwracać odpowiedzi z przekierowaniami, co upraszcza implementację przepływów pracy.
+
+Współpraca z useFetcher 
+    Hook useFetcher umożliwia wywoływanie akcji bez zmiany bieżącego widoku, co jest idealne dla operacji, które nie wymagają nawigacji (jak dodawanie do ulubionych).
+
+Możliwość walidacji danych
+    Akcje pozwalają na walidację danych przed wykonaniem właściwej operacji, a następnie zwrócenie błędów walidacji do formularza.
+
+Przewidywalne przepływy danych
+    Gdy cała logika modyfikacji danych jest obsługiwana przez akcje, przepływy danych w aplikacji stają się bardziej przewidywalne i łatwiejsze do zrozumienia.
+
+Te cechy sprawiają, że akcje React Router są szczególnie wartościowe w aplikacjach o średniej i dużej złożoności, gdzie zarządzanie stanem i logika biznesowa mogą szybko stać się skomplikowane.
