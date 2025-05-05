@@ -1472,6 +1472,18 @@
     {
       "productId": 1,
       "id": 5
+    },
+    {
+      "productId": 21,
+      "id": 6
+    },
+    {
+      "productId": 21,
+      "id": 7
+    },
+    {
+      "productId": 22,
+      "id": 8
     }
   ]
 }

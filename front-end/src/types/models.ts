@@ -39,3 +39,9 @@ export interface Currency {
   USD: string;
   PLN: string;
 }
+
+export interface Favourite {
+  id: number;
+  productId: number;
+  product: Product;
+}

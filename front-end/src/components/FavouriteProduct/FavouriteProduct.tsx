@@ -1,13 +1,14 @@
 import styles from "./FavouriteProduct.module.css";
 import REMOVE_ICON from "../../assets/remove.svg";
 import BAG_ICON from "../../assets/bag.svg";
-import { Product } from "../../types/models";
+import { Favourite } from "../../types/models";
 
 interface FavouriteProductProps {
-  product: Product;
+  favourite: Favourite;
 }
 
-export function FavouriteProduct({ product }: FavouriteProductProps) {
+export function FavouriteProduct({ favourite }: FavouriteProductProps) {
+  const product = favourite.product;
   return (
     <div className={styles.favouriteProduct}>
       <img src={product.photos[0]} alt={product.productName} />

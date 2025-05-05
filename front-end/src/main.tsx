@@ -34,7 +34,8 @@ const router = createBrowserRouter([
       {
         path: "/ulubione",
         element: <Favourites />,
-        loader: favouritesLoader, //loader to mechanizm, który pozwala na asynchroniczne ładowanie danych przed renderowaniem komponentu
+        loader: favouritesLoader,
+        //loader to mechanizm, który pozwala na asynchroniczne ładowanie danych przed renderowaniem komponentu
         //w loaderze można pobrać dane z API, a następnie przekazać je do komponentu jako props
         //w loaderze można również przekazać parametry do komponentu, które będą dostępne w propsach
       },
