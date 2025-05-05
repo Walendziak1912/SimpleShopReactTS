@@ -590,9 +590,10 @@
       "pricePLN": 129,
       "priceUSD": 39,
       "photos": [
-        "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
-        "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
-        "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
+        "http://localhost:3000/product-photos/men/t-shirts/21/1.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/21/2.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/21/3.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/21/4.jpg"
       ],
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
@@ -607,9 +608,10 @@
       "pricePLN": 49,
       "priceUSD": 10,
       "photos": [
-        "http://localhost:3000/product-photos/man-t-shirt-1.jpg",
-        "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
-        "http://localhost:3000/product-photos/man-t-shirt-3.jpg"
+        "http://localhost:3000/product-photos/men/t-shirts/22/1.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/22/2.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/22/3.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/22/4.jpg"
       ],
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
@@ -624,9 +626,10 @@
       "pricePLN": 199,
       "priceUSD": 49,
       "photos": [
-        "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
-        "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
-        "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
+        "http://localhost:3000/product-photos/men/t-shirts/23/1.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/23/2.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/23/3.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/23/4.jpg"
       ],
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
@@ -641,9 +644,10 @@
       "pricePLN": 199,
       "priceUSD": 49,
       "photos": [
-        "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
-        "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
-        "http://localhost:3000/product-photos/man-t-shirt-1.jpg"
+        "http://localhost:3000/product-photos/men/t-shirts/24/1.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/24/2.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/24/3.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/24/4.jpg"
       ],
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
@@ -653,14 +657,15 @@
       "gender": "men",
       "category": "odziez",
       "subcategory": "koszulki",
-      "productName": "T-shirt XXIV",
+      "productName": "T-shirt XXV",
       "brand": "Sun Tzu",
       "pricePLN": 129,
       "priceUSD": 39,
       "photos": [
-        "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
-        "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
-        "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
+        "http://localhost:3000/product-photos/men/t-shirts/25/1.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/25/2.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/25/3.jpg",
+        "http://localhost:3000/product-photos/men/t-shirts/25/4.jpg"
       ],
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
