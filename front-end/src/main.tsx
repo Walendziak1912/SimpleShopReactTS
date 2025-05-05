@@ -14,6 +14,10 @@ import { productListLoader } from "./api/productListLoader";
 import { favouritesLoader } from "./api/favouritesLoader";
 import { addProductToFavourites } from "./api/addProductToFavouriteAction";
 
+//wszystkie parametry ":productId", ":gendrer", ":category" i ":subcategory" są potocznie nazywane parametrami dynamicznymi (ta część url jest dynamiczna, zmienia się w zależności od tego co wybierze użytkownik)
+//dostęp do tych parametrów można uzyskać w komponentach za pomocą hooka useParams() z react-router-dom
+//w funkcji loader poprzez argument params
+//zalety parametrów dynamicznych: Tworzenie elastycznych ścieżek, Nawigację do konkretnych zasobów (jak szczegóły produktu), Implementację funkcji takich jak dodawanie do ulubionych dla konkretnego produktu
 const router = createBrowserRouter([
   {
     path: "/add-to-favourites/:productId",
@@ -30,7 +34,9 @@ const router = createBrowserRouter([
       {
         path: "/ulubione",
         element: <Favourites />,
-        loader: favouritesLoader,
+        loader: favouritesLoader, //loader to mechanizm, który pozwala na asynchroniczne ładowanie danych przed renderowaniem komponentu
+        //w loaderze można pobrać dane z API, a następnie przekazać je do komponentu jako props
+        //w loaderze można również przekazać parametry do komponentu, które będą dostępne w propsach
       },
       {
         path: "/:gender?",
