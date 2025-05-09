@@ -1,14 +1,12 @@
 import { Link, useFetcher } from "react-router-dom";
 import styles from "./Product.module.css";
 import { Product as ProductType } from "../../types/models";
-
+import { Price } from "../Price/Price";
 interface ProductProps {
   product: ProductType;
 }
 
 export function Product({ product }: ProductProps) {
-  //const { Form } = useFetcher();
-
   const fetcher = useFetcher();
 
   // Sprawdzanie stanu operacji
@@ -20,7 +18,9 @@ export function Product({ product }: ProductProps) {
     <Link to={`/product/${product.id}`} className={styles.product}>
       <img src={product.photos[0]} alt={product.productName} />
       <h3>{product.productName}</h3>
-      <p>{product.pricePLN}zł</p>
+      <p>
+        <Price product={product} />
+      </p>
       <fetcher.Form
         method="post"
         action={`/add-to-favourites/${product.id}`}

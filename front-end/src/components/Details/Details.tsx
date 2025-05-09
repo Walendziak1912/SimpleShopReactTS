@@ -4,6 +4,7 @@ import RETURN_ICON from "../../assets/return.svg";
 import { FullWidthButton } from "../FullWidthButton/FullWidthButton";
 import { Accordion } from "../Accordion/Accordion";
 import { Product } from "../../types/models";
+import { Price } from "../Price/Price";
 
 interface DetailsProps {
   product: Product;
@@ -25,7 +26,7 @@ export function Details({ product }: DetailsProps) {
     <div className={styles.details}>
       <h2>{product.brand}</h2>
       <p className={styles.productName}>{product.productName}</p>
-      <p className={styles.price}>{product.pricePLN}zł</p>
+      <p className={styles.price}><Price product={product} /></p>
 
       <FullWidthButton isBlack={true}>Dodaj do koszyka</FullWidthButton>
 

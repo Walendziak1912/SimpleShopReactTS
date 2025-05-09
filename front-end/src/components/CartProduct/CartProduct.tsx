@@ -1,6 +1,7 @@
 import styles from "./CartProduct.module.css";
 import REMOVE_ICON from "../../assets/remove.svg";
 import { Product } from "../../types/models";
+import { Price } from "../Price/Price";
 
 interface CartProductProps {
   product: Product;
@@ -15,11 +16,11 @@ export function CartProduct({ product }: CartProductProps) {
           <h3>
             {product.brand} {product.productName}
           </h3>
-          <p>{product.pricePLN}zł</p>
+          <p><Price product={product} /></p>
         </div>
         <p className={styles.priceRow}>
           <span>Cena: </span>
-          {product.pricePLN}zł
+          <Price product={product} />
         </p>
         <div className={styles.buttonRow}>
           <button>

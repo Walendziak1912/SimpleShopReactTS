@@ -1,21 +1,32 @@
-import { ChangeEvent } from "react";
+import { ChangeEvent, useContext } from "react";
 import styles from "./CurrencySelector.module.css";
 import { CURRENCIES } from "../../constants/currencies";
+import { CurrencyContext, CurrencyType } from "../../contexts/CurrenctyContext";
 
-export function CurrencySelector() {
+export const CurrencySelector = () => {
+  const currencyContext = useContext(CurrencyContext);
+
+  if (!currencyContext) {
+    throw new Error(
+      "CurrencySelector musi być używany w CurrencyContext.Provider"
+    );
+  }
+  const [currency, setCurrency] = currencyContext;
+
   const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    // Obsługa zmiany waluty - możemy rozszerzyć później
-    console.log(event.target.value);
+    const newCurrency = event.target.value as CurrencyType;
+    setCurrency(newCurrency);
+    localStorage.setItem("selected_currency", newCurrency);
   };
 
   return (
     <select
       className={styles.currencySelector}
       onChange={handleChange}
-      defaultValue={CURRENCIES.PLN}
+      value={currency}
     >
       <option value={CURRENCIES.PLN}>{CURRENCIES.PLN}</option>
       <option value={CURRENCIES.USD}>{CURRENCIES.USD}</option>
     </select>
   );
-}
+};
